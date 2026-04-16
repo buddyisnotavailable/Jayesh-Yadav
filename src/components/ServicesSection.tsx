@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 
 const services = [
   {
-    title: "Website Development",
+    title: "Websites & Mobile apps Development",
     description: "Building responsive, highly performant websites using modern technologies like React, Node.js, and Tailwind CSS.",
     icon: MonitorSmartphone,
   },
@@ -17,6 +17,24 @@ const services = [
   {
     title: "Landing Pages",
     description: "High-converting, fast-loading landing pages designed to capture attention and drive business goals effectively.",
+    icon: Zap,
+  },
+
+  {
+    title: "Automation Services",
+    description: "Automating workflows like lead capture, email responses, and integrations to save time and increase efficiency.",
+    icon: Zap,
+  },
+
+  {
+    title: "Website Audit",
+    description: "Detailed audit of your website covering speed, bugs, UX issues, and improvement suggestions.",
+    icon: Zap,
+  },
+
+  {
+    title: "Ready-Made Website Templates",
+    description: "Pre-built modern website templates for quick launch and cost-effective solutions.",
     icon: Zap,
   },
 ];
@@ -36,7 +54,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: "easeOut" as const },
   },
 };
 

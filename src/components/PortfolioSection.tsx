@@ -13,22 +13,22 @@ const projects = [
     title: "Nexus Analytics Dashboard",
     description: "A dark-themed data visualization dashboard for tracking SaaS metrics with real-time updates.",
     image: project1,
-    tags: ["React", "TypeScript", "Tailwind", "Recharts"],
-    link: "#",
+    tags: ["React", "TypeScript", "Vite", "SWC"],
+    link: "https://analytics-dashboard-six-blond.vercel.app/",
   },
   {
     title: "Aura E-Commerce",
     description: "Premium e-commerce storefront featuring a minimal cinematic design and smooth page transitions.",
     image: project2,
     tags: ["Next.js", "Node.js", "Framer Motion"],
-    link: "#",
+    link: "https://ecommerce-demo01.netlify.app/#",
   },
   {
     title: "Vortex Landing Page",
     description: "High-converting landing page for a modern API service, optimized for performance and accessibility.",
     image: project3,
     tags: ["React", "Tailwind", "Vite", "Playwright"],
-    link: "#",
+    link: "https://landing-page-1704.netlify.app/",
   },
 ];
 
@@ -47,7 +47,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: "easeOut" as const },
   },
 };
 
