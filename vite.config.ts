@@ -3,12 +3,18 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
-const rawPort = process.env.PORT ?? "5173";
-const port = Number(rawPort);
-if (Number.isNaN(port) || port <= 0) {
-  throw new Error(`Invalid PORT value: "${rawPort}"`);
+function getSafePort(): number {
+  const rawPort = process.env.PORT ?? "5173";
+  const port = Number(rawPort);
+  if (Number.isNaN(port) || port <= 0) {
+    // Fallback to default 5173 for invalid values
+    console.warn(`Invalid PORT value: "${rawPort}", falling back to 5173`);
+    return 5173;
+  }
+  return port;
 }
 
+const port = getSafePort();
 const basePath = process.env.BASE_PATH ?? "/";
 
 export default defineConfig({
