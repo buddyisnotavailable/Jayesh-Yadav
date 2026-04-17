@@ -28,7 +28,7 @@ export function ContactSection() {
               size="lg"
               className="w-full sm:w-auto h-14 px-8 bg-[#25D366] hover:bg-[#20bd5a] text-white font-medium rounded-xl transition-all"
             >
-              <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://wa.me/+919930078380" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <MessageSquare className="w-5 h-5" />
                 Chat on WhatsApp
               </a>
@@ -40,9 +40,9 @@ export function ContactSection() {
               size="lg"
               className="w-full sm:w-auto h-14 px-8 font-medium rounded-xl border-border/50 hover:bg-secondary transition-all"
             >
-              <a href="mailto:hello@jayesh-dev.com" className="flex items-center gap-2">
+              <a href="mailto:jayeshyadav.jr@gmail.com" className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
-                hello@jayesh-dev.com
+                jayeshyadav.jr@gmail.com
               </a>
             </Button>
           </div>
