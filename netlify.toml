@@ -4,10 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "22"
-  # Vite `base`; use `/` for apex Netlify site or subdirectory deploys as configured.
-  BASE_PATH = "/"
 
-# Client-side routing (wouter)
 [[redirects]]
   from = "/*"
   to = "/index.html"
